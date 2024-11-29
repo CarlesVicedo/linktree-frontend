@@ -14,7 +14,7 @@ function RegisterView() {
 
     const { register, watch, handleSubmit, formState: { errors } } = useForm({ defaultValues: initialValues })
 
-    console.log(errors)
+    const password = watch('password')
 
     const handleRegister = () => {
         console.log('From handleRegister')
@@ -51,7 +51,11 @@ function RegisterView() {
                         placeholder="Register e-mail"
                         className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
                         {...register('email', {
-                            required: 'E-mail is mandatory'
+                            required: 'E-mail is mandatory',
+                            pattern: {
+                                value: /\S+@\S+\.\S+/,
+                                message: "E-mail format not valid.",
+                            },
                         })}
                     />
 
@@ -81,7 +85,11 @@ function RegisterView() {
                         placeholder="Register password"
                         className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
                         {...register('password', {
-                            required: 'Password is mandatory'
+                            required: 'Password is mandatory',
+                            minLength: {
+                                value: 8,
+                                message: 'Password must be at least 8 characters long'
+                            }
                         })}
                     />
 
@@ -97,7 +105,8 @@ function RegisterView() {
                         placeholder="Repeat Password"
                         className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
                         {...register('password_confirmation', {
-                            required: 'Repeating password is mandatory'
+                            required: 'Repeating password is mandatory',
+                            validate: (value) => value === password || 'Password does not match'
                         })}
                     />
 
