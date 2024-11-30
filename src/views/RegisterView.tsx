@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form"
 import axios, { isAxiosError } from 'axios'
 import ErrorMessage from "../components/ErrorMessage"
 import { RegisterForm } from "../types"
+import { toast } from "sonner"
 
 function RegisterView() {
 
@@ -21,12 +22,12 @@ function RegisterView() {
     const handleRegister = async (formData: RegisterForm) => {
         try {
             const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/auth/register`, formData)
-            console.log(data)
+            toast.success(data)
             reset()
 
         } catch (error) {
             if (isAxiosError(error) && error.response) {
-                console.log(error.response.data.error)
+                toast.error(error.response.data.error)
             }
         }
     }
@@ -111,7 +112,7 @@ function RegisterView() {
                 <div className="grid grid-cols-1 space-y-3">
                     <label htmlFor="password_confirmation" className="text-2xl text-slate-500">Rpeat Password</label>
                     <input
-                        id="password"
+                        id="repeat-password"
                         type="password"
                         placeholder="Repeat Password"
                         className="bg-slate-100 border-none p-3 rounded-lg placeholder-slate-400"
