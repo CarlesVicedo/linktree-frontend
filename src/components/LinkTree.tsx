@@ -45,7 +45,7 @@ function LinkTree({ data }: LinkTreeProps) {
                         <div className="w-full md:w-96 bg-slate-800 px-5 py-10 space-y-6">
                             <p className="text-4xl text-center text-white">{data.handle}</p>
 
-                            {data.image && <img src={data.image} alt="profile image" className="mx-auto max-w-[250px]" />}
+                            {data.image && <img src={data.image} alt="profile image" className="mx-auto max-w-[250px] rounded-lg" />}
 
                             <p className="text-center text-lg font-black text-white">{data.description}</p>
                         </div>
