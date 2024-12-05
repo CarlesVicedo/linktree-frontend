@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { social } from "../data/social"
 import LinkTreeInput from "../components/LinkTreeInput"
+import { isValidUrl } from "../utils"
+import { toast } from "sonner"
 
 const LinkTreeView = () => {
     const [linkTreeLinks, setLinktreeLinks] = useState(social)
@@ -11,7 +13,16 @@ const LinkTreeView = () => {
     }
 
     const handleEnableLink = (socialNetwork: string) => {
-        const updatedLinks = linkTreeLinks.map(link => link.name === socialNetwork ? { ...link, enabled: !link.enabled } : link)
+        const updatedLinks = linkTreeLinks.map(link => {
+            if (link.name === socialNetwork) {
+                if (isValidUrl(link.url)) {
+                    return { ...link, enabled: !link.enabled }
+                } else {
+                    toast.error('Not valid URL.')
+                }
+            }
+            return link
+        })
         setLinktreeLinks(updatedLinks)
     }
 
