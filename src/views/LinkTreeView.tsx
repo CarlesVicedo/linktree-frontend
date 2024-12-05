@@ -5,7 +5,7 @@ import { isValidUrl } from "../utils"
 import { toast } from "sonner"
 import { useMutation, useQueryClient } from "@tanstack/react-query"
 import { updateProfile } from "../api/LinkTreeAPI"
-import { LinkTreeLink, User } from "../types"
+import { SocialNetwork, User } from "../types"
 
 const LinkTreeView = () => {
     const [linkTreeLinks, setLinktreeLinks] = useState(social)
@@ -25,7 +25,7 @@ const LinkTreeView = () => {
 
     useEffect(() => {
         const updatedData = linkTreeLinks.map(item => {
-            const userLink = JSON.parse(user.links).find((link: LinkTreeLink) => link.name === item.name)
+            const userLink = JSON.parse(user.links).find((link: SocialNetwork) => link.name === item.name)
             if (userLink) {
                 return { ...item, url: userLink.url, enabled: userLink.enabled }
             }
