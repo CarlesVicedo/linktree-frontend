@@ -5,7 +5,15 @@ import LinkTreeInput from "../components/LinkTreeInput"
 const LinkTreeView = () => {
     const [linkTreeLinks, setLinktreeLinks] = useState(social)
 
-    console.log(linkTreeLinks)
+    const handleUrlChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const updatedLinks = linkTreeLinks.map(link => link.name === e.target.name ? { ...link, url: e.target.value } : link)
+        setLinktreeLinks(updatedLinks)
+    }
+
+    const handleEnableLink = (socialNetwork: string) => {
+        const updatedLinks = linkTreeLinks.map(link => link.name === socialNetwork ? { ...link, enabled: !link.enabled } : link)
+        setLinktreeLinks(updatedLinks)
+    }
 
     return (
         <div className="space-y-5">
@@ -13,6 +21,8 @@ const LinkTreeView = () => {
                 <LinkTreeInput
                     key={item.name}
                     item={item}
+                    handleUrlChange={handleUrlChange}
+                    handleEnableLink={handleEnableLink}
                 />
             ))}
         </div>
