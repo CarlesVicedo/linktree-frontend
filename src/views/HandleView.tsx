@@ -15,8 +15,8 @@ const HandleView = () => {
     if (isLoading) return <p className="text-center text-white">Loading...</p>
     if (error) return <Navigate to={'/404'} />
 
-    return (
-        <div>HandleView</div>
+    if (data) return (
+        <div>{data.name}</div>
     )
 }
 

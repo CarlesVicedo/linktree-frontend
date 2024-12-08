@@ -1,6 +1,6 @@
 import { isAxiosError } from "axios"
 import api from "../config/axios"
-import { User } from "../types"
+import { User, UserHandle } from "../types"
 
 export const getUser = async () => {
     try {
@@ -43,7 +43,7 @@ export const uploadImage = async (file: File) => {
 
 export const getUserByHandle = async (handle: string) => {
     try {
-        const { data } = await api(`/${handle}`)
+        const { data } = await api<UserHandle>(`/${handle}`)
         return data
 
     } catch (error) {
