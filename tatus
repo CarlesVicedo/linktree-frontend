@@ -1,0 +1,323 @@
+[33mcommit a21f7c508e2865e47b527014f1e965de2ee088ae[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/home-page-and-navigation[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 858ab06 7a6211c
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Sun Dec 8 20:42:50 2024 +0100
+
+    Merge pull request #12 from CarlesVicedo/feature/create-links-page
+    
+    Feature/create links page
+
+[33mcommit 7a6211c8735b85aee71e0a3f970e2f29329a89ef[m[33m ([m[1;31morigin/feature/create-links-page[m[33m, [m[1;32mfeature/create-links-page[m[33m)[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sun Dec 8 20:42:03 2024 +0100
+
+    Create component for rendering user data
+
+[33mcommit 2fae30df60a03589f9b06aa6830bc5fd09922f04[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sun Dec 8 12:50:02 2024 +0100
+
+    Create types for UserHandle
+
+[33mcommit 29b65b0f4cc5b91928968049de4307fb81f03c73[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sun Dec 8 12:45:47 2024 +0100
+
+    Create 404 page
+
+[33mcommit 5073726933e162ef4da867e0b72f9707b450ab08[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sun Dec 8 12:36:07 2024 +0100
+
+    Retrieve user's data by handle
+
+[33mcommit 17ead2f8976b77310a358ca9eb3441f08b2dcdbb[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sat Dec 7 21:07:41 2024 +0100
+
+    Create route and HandleView
+
+[33mcommit 858ab0625fee9a0400e2bff668c5fa89bc3d0b32[m
+Merge: d8b03e9 4dc4096
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Sat Dec 7 11:54:26 2024 +0100
+
+    Merge pull request #11 from CarlesVicedo/feature/link-area
+    
+    Feature/link area
+
+[33mcommit 4dc4096929a0031fd83f5f18b4e2571d13e81c69[m[33m ([m[1;31morigin/feature/link-area[m[33m, [m[1;32mfeature/link-area[m[33m)[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sat Dec 7 11:53:45 2024 +0100
+
+    Add drag and drop
+
+[33mcommit e49adbae9646751714a8d3d135fd9beda575264a[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Fri Dec 6 14:13:10 2024 +0100
+
+    Set link ids properly
+
+[33mcommit 62ccca1f3dcfee9fcc90fba2a6b6e509d904dca9[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Fri Dec 6 13:12:24 2024 +0100
+
+    Store only enabled links and give them an ID
+
+[33mcommit d8b03e9a316b074546ff39ba477ba7471548d303[m
+Merge: 2a3b634 f50a6e9
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Thu Dec 5 22:34:08 2024 +0100
+
+    Merge pull request #10 from CarlesVicedo/feature/link-area
+    
+    Feature/link area
+
+[33mcommit f50a6e94f8ea6f219bbb0e2dc8b1ca2d9426a65f[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Thu Dec 5 22:31:44 2024 +0100
+
+    Show links in my profile
+
+[33mcommit 564eca55c9b6068467ea51d7df1cf17411b069d3[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Thu Dec 5 21:59:17 2024 +0100
+
+    Show stored link data
+
+[33mcommit c1455c5108e178e62905fa0a4157e61f38b8377f[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Thu Dec 5 14:00:57 2024 +0100
+
+    Store lnks in database
+
+[33mcommit 7f02d6ec43e291beb5018589a60977b7beea778d[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Thu Dec 5 12:45:18 2024 +0100
+
+    Add validations to urls
+
+[33mcommit 9475dc103acd366e7dbe75e1b5600fc7a523ac9b[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Thu Dec 5 12:22:06 2024 +0100
+
+    Store urls and enabled in state
+
+[33mcommit 07d00b9c6e64e732a5f77db0ad370b14078e692f[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Wed Dec 4 22:53:49 2024 +0100
+
+    Create social media links component and render it
+
+[33mcommit 2a3b634daf910f5d8b7e95ad80adcd471d8f4b85[m
+Merge: 43547b8 8d30cb7
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Wed Dec 4 15:34:18 2024 +0100
+
+    Merge pull request #9 from CarlesVicedo/feature/upload-images
+    
+    Feature/upload images
+
+[33mcommit 8d30cb70807931dd66dbf5ef47ffdbd56c21389a[m[33m ([m[1;31morigin/feature/upload-images[m[33m, [m[1;32mfeature/upload-images[m[33m)[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Wed Dec 4 15:33:26 2024 +0100
+
+    Use optimistic updates for image uploadings
+
+[33mcommit ad7a1b95b6e405d2103aeb9d6de471b2fcd4a3b8[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Wed Dec 4 15:12:48 2024 +0100
+
+    Update mutation, make possible to upload images and show profile data
+
+[33mcommit 43547b8a227deca46287b919812480851c989ddc[m
+Merge: 71c8700 ef132c1
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Tue Dec 3 23:17:21 2024 +0100
+
+    Merge pull request #8 from CarlesVicedo/feature/create-admin
+    
+    Feature/create admin
+
+[33mcommit ef132c1830ef8575f684fa02c3598eb873f0c4ad[m[33m ([m[1;31morigin/feature/create-admin[m[33m, [m[1;32mfeature/create-admin[m[33m)[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Tue Dec 3 23:16:30 2024 +0100
+
+    Add updateProfileMutation
+
+[33mcommit 87654c06b0ca95304b31bfe6599a1b149836d456[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Tue Dec 3 15:54:54 2024 +0100
+
+    User fetched data in profile form
+
+[33mcommit 03bc0beba8f608a9e4a403f9251bb3382d9ebcaa[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Tue Dec 3 10:46:57 2024 +0100
+
+    Register fields handle and description and make them mandatory
+
+[33mcommit 71c8700ecaecf93c16dfcf898f3dee8e00e31ff8[m
+Merge: 9d95bb4 daf980d
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Mon Dec 2 23:10:38 2024 +0100
+
+    Merge pull request #7 from CarlesVicedo/feature/create-admin
+    
+    Feature/create admin
+
+[33mcommit daf980d0554783c82cb372f3f6ad27d2e4ff4fc2[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Mon Dec 2 23:09:01 2024 +0100
+
+    Move my profile to its own component and start using fetched data
+
+[33mcommit a6a681e3aff084e14cfa854d3169b87070df1618[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Mon Dec 2 22:43:30 2024 +0100
+
+    Protect auth routes
+
+[33mcommit de1f2e66392b363089e1e23639fe2147b0f7de3f[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Mon Dec 2 20:59:41 2024 +0100
+
+    Add react query and create interceptor for getting the token from local storage and send it whenever the api call needs it
+
+[33mcommit f2a194685f083e4fe669e72fcd6930fe8aaf71e7[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sun Dec 1 20:39:26 2024 +0100
+
+    Create my profile view
+
+[33mcommit b72684968a91a5d7001e90755d92c13e1d16e5db[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sun Dec 1 13:31:42 2024 +0100
+
+    Create admin navigation, view files and routes
+
+[33mcommit 9d95bb4480b41fdb43d935501a7017ce4e82d21e[m
+Merge: 927245f caa9e02
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Sun Dec 1 13:04:28 2024 +0100
+
+    Merge pull request #6 from CarlesVicedo/feature/add-forms
+    
+    Store token in local storage
+
+[33mcommit caa9e02fe0da815a0c31fedaeca514de2ba78fa6[m[33m ([m[1;31morigin/feature/add-forms[m[33m)[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sun Dec 1 12:50:58 2024 +0100
+
+    Store token in local storage
+
+[33mcommit 927245faf1569f5605206a599bf4514821e233da[m
+Merge: 04de6a7 9e47ede
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Sat Nov 30 23:31:39 2024 +0100
+
+    Merge pull request #5 from CarlesVicedo/feature/add-forms
+    
+    Feature/add forms
+
+[33mcommit 9e47edec3fb0d742abdfbf725f4eacd5fa748e0e[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sat Nov 30 23:30:56 2024 +0100
+
+    Add login form with validations and backend connection
+
+[33mcommit 6c71169d76d37d421f659c2c54a3e00e02cb8fdf[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sat Nov 30 23:18:24 2024 +0100
+
+    Create axios config
+
+[33mcommit 04de6a75c062d18ffb97f71df3532c17d3be82f3[m
+Merge: 3b13e4c fcec552
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Sat Nov 30 21:41:22 2024 +0100
+
+    Merge pull request #4 from CarlesVicedo/feature/add-forms
+    
+    Show error and success messages in toast
+
+[33mcommit fcec5521659bf218d2426d81c5be36e3f6dc9dfa[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sat Nov 30 21:39:45 2024 +0100
+
+    Show error and success messages in toast
+
+[33mcommit 3b13e4c8793fa1528301f16173f506a6285ec538[m
+Merge: 204b4bf 031b049
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Sat Nov 30 20:58:41 2024 +0100
+
+    Merge pull request #3 from CarlesVicedo/feature/add-forms
+    
+    Connect register form to backend
+
+[33mcommit 031b0498f2e5fd8c29b02a71df6931912d962db2[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sat Nov 30 20:56:33 2024 +0100
+
+    Connect register form to backend
+
+[33mcommit 204b4bf927982967363e1dd338295042e70052fc[m
+Merge: 1e50f5a 56753c6
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Sat Nov 30 00:41:49 2024 +0100
+
+    Merge pull request #2 from CarlesVicedo/feature/add-forms
+    
+    Feature/add forms
+
+[33mcommit 56753c6f65b7209034d256f6f21b4ac5cf612b03[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sat Nov 30 00:40:44 2024 +0100
+
+    Read form values
+
+[33mcommit 3257bc021a40623b3e0ffca9165b7209a505e57c[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sat Nov 30 00:31:20 2024 +0100
+
+    Add form validations
+
+[33mcommit 7aa86d0b3db57cd88d02eb034f256223620fc089[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Sat Nov 30 00:14:53 2024 +0100
+
+    Creat register form and error message component
+
+[33mcommit d57944dd98a4f5535986fdbda87053504c335d6a[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Fri Nov 29 23:31:16 2024 +0100
+
+    Create auth layout
+
+[33mcommit 1e50f5a423913ba1b0b2ae675bb8a10dcd02fcb6[m
+Merge: 087b07b cbe1fcb
+Author: CarlesVicedo <90244633+CarlesVicedo@users.noreply.github.com>
+Date:   Fri Nov 29 19:43:43 2024 +0100
+
+    Merge pull request #1 from CarlesVicedo/feature/routes
+    
+    Feature/routes
+
+[33mcommit cbe1fcbbc2c30935d9d65f8d5bb7a6c57983064d[m[33m ([m[1;31morigin/feature/routes[m[33m)[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Fri Nov 29 19:42:35 2024 +0100
+
+    Add navigation between login and register
+
+[33mcommit cf5320c619278ac90833f5e0d01174aa2c609359[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Fri Nov 29 19:32:25 2024 +0100
+
+    Add react router and first routes
+
+[33mcommit 087b07b1df9a64fdbfec6335eb57e51c3801354c[m
+Author: CarlesVicedo <vicedocarles@gmail.com>
+Date:   Fri Nov 29 19:06:27 2024 +0100
+
+    Set React and Tailwind up
