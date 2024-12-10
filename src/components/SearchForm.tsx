@@ -23,8 +23,6 @@ const SearchForm = () => {
         mutation.mutate(slug)
     }
 
-    console.log(mutation)
-
     return (
         <form
             onSubmit={handleSubmit(handleSearch)}

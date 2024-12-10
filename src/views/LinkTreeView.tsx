@@ -103,8 +103,6 @@ const LinkTreeView = () => {
             })
         }
 
-        console.log(updatedItems)
-
         // Store in Database
         queryClient.setQueryData(['user'], (prevData: User) => {
             return {

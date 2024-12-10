@@ -56,7 +56,6 @@ export const getUserByHandle = async (handle: string) => {
 export const searchByHandle = async (handle: string) => {
     try {
         const { data } = await api.post<string>('/search', {handle})
-        console.log('data des del backend')
         return data
 
     } catch (error) {
