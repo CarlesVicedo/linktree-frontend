@@ -9,7 +9,7 @@ const AppLayout = () => {
     const { data, isLoading, isError } = useQuery({
         queryFn: getUser,
         queryKey: ['user'],
-        retry: 2,
+        retry: 3,
         refetchOnWindowFocus: false
     })
 
