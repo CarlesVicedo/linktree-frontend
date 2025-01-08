@@ -26,6 +26,7 @@ const LinkTreeLink = ({ link }: LinkTreeLinkProps) => {
             {...listeners}
         >
             <div
+                data-testid="link-tree-link-image"
                 className="w-12 h-12 bg-cover"
                 style={{ backgroundImage: `url('/social/icon_${link.name}.svg')` }}
             >
