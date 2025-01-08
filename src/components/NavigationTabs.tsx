@@ -47,7 +47,7 @@ const NavigationTabs = () => {
                                 key={tab.name}
                                 to={tab.href}
                                 className={classNames(
-                                    location.pathname === tab.href
+                                    location && location.pathname === tab.href
                                         ? 'border-blue-500 text-blue-500'
                                         : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
                                     'group inline-flex items-center border-b-2 py-4 px-1 text-xl'
@@ -55,7 +55,7 @@ const NavigationTabs = () => {
                             >
                                 <tab.icon
                                     className={classNames(
-                                        location.pathname === tab.href ? 'text-blue-500' : 'text-gray-400 group-hover:text-gray-500',
+                                        location && location.pathname === tab.href ? 'text-blue-500' : 'text-gray-400 group-hover:text-gray-500',
                                         '-ml-0.5 mr-2 h-5 w-5'
                                     )}
                                     aria-hidden="true"
