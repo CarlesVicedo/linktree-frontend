@@ -1,4 +1,3 @@
-// filepath: /c:/Users/carle/Documents/Programacio/linktree/frontend/src/components/ErrorMessage.test.tsx
 import { render, screen } from '@testing-library/react'
 import ErrorMessage from '../ErrorMessage'
 import '@testing-library/jest-dom'
