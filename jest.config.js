@@ -1,6 +1,6 @@
 
 export default {
-    testEnvironment: "jsdom",
+    testEnvironment: "./jest.environment.cjs",
     transform: {
       "^.+\\.tsx?$": "ts-jest",
     },
