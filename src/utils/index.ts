@@ -3,12 +3,8 @@ export const classNames = (...classes : string[]) => {
 }
 
 export const isValidUrl = (url: string) => {
-    try {
-        new URL(url)
-        return true
-    } catch (error) {
-        console.log(error)
-        return false
-    }
+      const urlRegex = /^(?:(?:https?|ftp):\/\/)?(?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)+[^\s]*$/i;
+      
+      return urlRegex.test(url);
 }
 
