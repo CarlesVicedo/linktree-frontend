@@ -1,50 +1,128 @@
-# React + TypeScript + Vite
+# LinkTree
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LinkTree is a web application that allows users to create a personalized page with links to their social media profiles and other important websites. This project is built using modern web technologies including React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Profiles**: Create and manage user profiles with custom handles, descriptions, and profile images.
+- **Social Links**: Add, edit, and reorder social media links.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Authentication**: Secure user authentication and authorization.
+- **Real-time Updates**: Instant updates to user profiles and links.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**: React, TypeScript, Vite
+- **State Management**: React Query
+- **Styling**: Tailwind CSS
+- **Routing**: React Router
+- **HTTP Client**: Axios
+- **Testing**: Jest, React Testing Library
+- **Build Tool**: Vite
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/yourusername/linktree.git
+   cd linktree
+   ```
+  
+2. Install dependencies:
+
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+   ### Running the Application
+
+1. Start the development server:
+
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+2. Open your browser and navigate to `http://localhost:5173`.
+
+### Building for Production
+
+To build the application for production, run:
+
+```sh
+npm run build
+# or
+yarn build
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+The production-ready files will be in the `dist` directory.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Running Tests
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+To run the tests, use the following command:
+
+```sh
+npm test
+# or
+yarn test
 ```
+
+## Project Structure
+
+```plaintext
+├── src
+│   ├── api
+│   │   └── LinkTreeAPI.ts
+│   ├── components
+│   │   ├── Header.tsx
+│   │   ├── LinkTree.tsx
+│   │   ├── LinkTreeInput.tsx
+│   │   ├── LinkTreeLink.tsx
+│   │   ├── NavigationTabs.tsx
+│   │   └── SearchForm.tsx
+│   ├── config
+│   │   └── axios.ts
+│   ├── utils
+│   │   └── index.ts
+│   ├── types
+│   │   └── index.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── public
+│   └── index.html
+├── tsconfig.json
+├── vite.config.ts
+├── package.json
+└── README.md
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Query](https://react-query.tanstack.com/)
+- [Axios](https://axios-http.com/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
