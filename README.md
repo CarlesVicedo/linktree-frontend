@@ -32,7 +32,7 @@ LinkTree is a web application that allows users to create a personalized page wi
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/linktree.git
+   git clone https://github.com/CarlesVicedo/linktree-frontend.git
    cd linktree
    ```
   
