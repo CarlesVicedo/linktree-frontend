@@ -49,7 +49,7 @@ const SearchForm = () => {
             <div className="mt-10">
                 {mutation.isPending && <p className="text-center" >Loading...</p>}
                 {mutation.error && <p className="text-center text-red-600 font-black" >{mutation.error.message}</p>}
-                {mutation.data && <p className="text-center text-cyan-500 font-black" >{mutation.data} go to <Link to={'/auth/register'} state={{ handle: slug }} > sign in</Link></p>}
+                {mutation.data && <><p className="text-center text-cyan-500 font-black" >{mutation.data}</p> <p className="text-center font-black"><Link to={'/auth/register'} state={{ handle: slug }} >Click here to sign in</Link></p></>}
             </div>
 
             <input
