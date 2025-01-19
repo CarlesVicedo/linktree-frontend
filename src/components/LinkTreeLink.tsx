@@ -9,7 +9,6 @@ type LinkTreeLinkProps = {
 const LinkTreeLink = ({ link }: LinkTreeLinkProps) => {
     const { attributes, listeners, setNodeRef, transform, transition } = useSortable({
         id: link.id,
-
     })
 
     const style = {
@@ -21,7 +20,7 @@ const LinkTreeLink = ({ link }: LinkTreeLinkProps) => {
         <li
             ref={setNodeRef}
             style={style}
-            className="bg-white px-5 py-2 flex items-center gap-5 rounded-lg"
+            className="bg-white px-5 py-2 flex items-center gap-5 rounded-lg touch-none"
             {...attributes}
             {...listeners}
         >
